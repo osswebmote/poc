@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpnt6ycflfjpd"]
+
+[ext_resource type="Script" path="res://script/select_device.gd" id="1_t0p3m"]
+
+[node name="SelectDevice" type="Node2D"]
+script = ExtResource("1_t0p3m")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 383.0
+offset_top = 370.0
+offset_right = 1039.0
+offset_bottom = 457.0
+theme_override_font_sizes/font_size = 41
+text = "computer Device room"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 406.0
+offset_top = 475.0
+offset_right = 1042.0
+offset_bottom = 579.0
+theme_override_font_sizes/font_size = 36
+text = "smartphone(connect to computer)"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 43.0
+offset_right = 1074.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 51
+text = "computer <=> smartphone connect room"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
